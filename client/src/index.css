@@ -1,0 +1,8 @@
+body {
+  background: #000000;
+}
+
+.paystack-container.paystack-embed .paystack-wrapper {
+    width: 100%;
+    margin: none;
+}

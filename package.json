@@ -1,0 +1,35 @@
+{
+  "name": "cinema-management-app",
+  "version": "1.0.0",
+  "description": "Book movie tickets fast and easy",
+  "main": "server.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js",
+    "start": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francisudeji/movietime.git"
+  },
+  "author": "Divine Hycenth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dnature/movietime/issues"
+  },
+  "homepage": "https://github.com/dnature/movietime#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.16",
+    "mongoose-timestamp": "^0.6.0",
+    "uuidv4": "^2.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.10"
+  }
+}
